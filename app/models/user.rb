@@ -9,4 +9,8 @@ class User < ApplicationRecord
   
   #　パスワード付モデルのための有効化
   has_secure_password
+  
+  #　1対多
+  has_many :tasks
+  
 end
